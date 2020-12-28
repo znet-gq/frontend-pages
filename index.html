@@ -1,9 +1,18 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>znet.gq</title>
+		<meta charset="utf-8" />
+		<title>ZeroNet</title>
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+		<link rel="icon" href="favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 	<body>
-		Landing page, built on vercel.com
+		<iframe sandbox="allow-downloads allow-forms allow-modals allow-orientation-lock allow-pointer-lock allow-popups allow-presentation allow-scripts allow-top-navigation"></iframe>
+
+		<script type="text/javascript">
+			const iframe = document.querySelector("iframe");
+			iframe.src = `https://ctl.znet.gq/${location.hostname.replace(/00\.ml$/, "")}${location.pathname}`;
+		</script>
 	</body>
 </html>
